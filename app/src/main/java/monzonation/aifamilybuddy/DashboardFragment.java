@@ -107,7 +107,7 @@ public class DashboardFragment extends Fragment implements BalanceAdapter.ItemCl
 
         textViewMessage = view.findViewById(R.id.textViewMessage);
 
-        CollectionReference collectionReferenceMessage = firebaseFirestore.collection("Message");
+        CollectionReference collectionReferenceMessage = firebaseFirestore.collection("Message Demo");
         collectionReferenceMessage.get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -175,7 +175,7 @@ public class DashboardFragment extends Fragment implements BalanceAdapter.ItemCl
                         Map<String, Object> user = new HashMap<>();
                         user.put("message", message);
 
-                        DocumentReference documentReference = firebaseFirestore.collection("Message").document("message");
+                        DocumentReference documentReference = firebaseFirestore.collection("Message Demo").document("message");
                         documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
@@ -197,7 +197,7 @@ public class DashboardFragment extends Fragment implements BalanceAdapter.ItemCl
             }
         });
 
-        CollectionReference collectionReference = firebaseFirestore.collection("Income");
+        CollectionReference collectionReference = firebaseFirestore.collection("Income Demo");
         collectionReference.orderBy("amount", Query.Direction.DESCENDING).get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -231,7 +231,7 @@ public class DashboardFragment extends Fragment implements BalanceAdapter.ItemCl
                             }
 
 
-                            CollectionReference collectionReferenceExpenses = firebaseFirestore.collection("Expenses");
+                            CollectionReference collectionReferenceExpenses = firebaseFirestore.collection("Expenses Demo");
                             collectionReferenceExpenses.orderBy("amount", Query.Direction.DESCENDING).get()
                                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                                         @Override
@@ -275,7 +275,7 @@ public class DashboardFragment extends Fragment implements BalanceAdapter.ItemCl
                     }
                 });
 
-        CollectionReference collectionReferenceBalance = firebaseFirestore.collection("Balance");
+        CollectionReference collectionReferenceBalance = firebaseFirestore.collection("Balance Demo");
         collectionReferenceBalance.orderBy("date", Query.Direction.DESCENDING).get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -350,7 +350,7 @@ public class DashboardFragment extends Fragment implements BalanceAdapter.ItemCl
                 user.put("total income", sum);
                 user.put("total expense", sumExpenses);
 
-                DocumentReference documentReference = firebaseFirestore.collection("Balance").document(getCurrentYearAndMonthTitle());
+                DocumentReference documentReference = firebaseFirestore.collection("Balance Demo").document(getCurrentYearAndMonthTitle());
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
@@ -411,7 +411,7 @@ public class DashboardFragment extends Fragment implements BalanceAdapter.ItemCl
             listDateExpenseForExcel.clear();
             listDetailsExpenseForExcel.clear();
 
-            CollectionReference collectionReference = firebaseFirestore.collection("Income");
+            CollectionReference collectionReference = firebaseFirestore.collection("Income Demo");
             collectionReference.get()
                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                         @Override
@@ -447,7 +447,7 @@ public class DashboardFragment extends Fragment implements BalanceAdapter.ItemCl
                                         }
                                     }
                                 }
-                                CollectionReference collectionReference = firebaseFirestore.collection("Expenses");
+                                CollectionReference collectionReference = firebaseFirestore.collection("Expenses Demo");
                                 collectionReference.orderBy("id", Query.Direction.DESCENDING).get()
                                         .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                                             @Override
