@@ -94,7 +94,7 @@ public class IncomeFragment extends Fragment implements IncomeAdapter.ItemClickL
         progressBar.setIndeterminate(true);
         progressBar.setIndeterminateTintList(ColorStateList.valueOf(Color.WHITE));
 
-        CollectionReference collectionReference = firebaseFirestore.collection("Income");
+        CollectionReference collectionReference = firebaseFirestore.collection("Income Demo");
 //        AggregateQuery countQuery = collectionReference.count();
 //        countQuery.get(AggregateSource.SERVER).addOnCompleteListener(task ->{
 //           if(task.isSuccessful()){
@@ -267,7 +267,7 @@ public class IncomeFragment extends Fragment implements IncomeAdapter.ItemClickL
                         user.put("date", StringDate);
                         user.put("details", StringDetails);
 
-                        DocumentReference documentReference = firebaseFirestore.collection("Income").document(idLongString);
+                        DocumentReference documentReference = firebaseFirestore.collection("Income Demo").document(idLongString);
                         documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
@@ -341,7 +341,7 @@ public class IncomeFragment extends Fragment implements IncomeAdapter.ItemClickL
                 progressBar.setIndeterminate(true);
                 progressBar.setIndeterminateTintList(ColorStateList.valueOf(Color.WHITE));
 
-                firebaseFirestore.collection("Income").document(idLongGetString)
+                firebaseFirestore.collection("Income Demo").document(idLongGetString)
                         .delete()
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
@@ -485,7 +485,7 @@ public class IncomeFragment extends Fragment implements IncomeAdapter.ItemClickL
                 user.put("date", StringDate);
                 user.put("details", StringDetails);
 
-                DocumentReference documentReference = firebaseFirestore.collection("Income").document(idLongGetString);
+                DocumentReference documentReference = firebaseFirestore.collection("Income Demo").document(idLongGetString);
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
