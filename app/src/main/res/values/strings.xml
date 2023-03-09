@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AiFamily Buddy</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="income">Income</string>
+    <string name="expenses">Expenses</string>
+    <string name="name">Name</string>
+    <string name="from">From</string>
+    <string name="save">Save</string>
+    <string name="date">Date</string>
+    <string name="amount">Amount</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="export">Export</string>
+    <string name="update">Update</string>
+    <string name="details">Details</string>
+</resources>

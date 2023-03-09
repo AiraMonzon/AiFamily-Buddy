@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "820893017894",
+    "project_id": "aifamily-buddy",
+    "storage_bucket": "aifamily-buddy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820893017894:android:d65bb5e17474b1d69303e7",
+        "android_client_info": {
+          "package_name": "monzonation.aifamilybuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820893017894-ftbaba0fa2tcgmvntqb25cm5p4sb6vvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKG_f1TY-ePSdVcM3EpIuvZSsdRLZ6tAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820893017894-ftbaba0fa2tcgmvntqb25cm5p4sb6vvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

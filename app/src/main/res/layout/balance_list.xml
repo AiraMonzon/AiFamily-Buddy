@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/white"
+            android:layout_margin="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_gravity="center">
+                                <TextView
+                                    android:id="@+id/textViewYearMonth"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:text="Year Month"
+                                    android:textAlignment="textStart"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    >
+                                    <TextView
+                                        android:id="@+id/Income"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Income: "
+                                        android:textColor="#000000"
+                                        android:textSize="16sp"
+                                        android:textAlignment="textStart"
+                                        android:layout_marginStart="5dp"/>
+                                <TextView
+                                    android:id="@+id/textViewIncome"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Income"
+                                    android:textColor="#0F52C6"
+                                    android:textSize="16sp"
+                                    android:textAlignment="textStart"
+                                    android:layout_marginStart="5dp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    >
+                                    <TextView
+                                        android:id="@+id/Expense"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Expense: "
+                                        android:textColor="#000000"
+                                        android:textSize="16sp"
+                                        android:textAlignment="textStart"
+                                        android:layout_marginStart="5dp"/>
+                                    <TextView
+                                        android:id="@+id/textViewExpense"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#D51313"
+                                        android:textSize="16sp"
+                                        android:text="Expense"
+                                        android:textAlignment="textStart"
+                                        android:layout_marginStart="5dp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    >
+                                    <TextView
+                                        android:id="@+id/Balance"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Balance: "
+                                        android:textColor="#000000"
+                                        android:textSize="16sp"
+                                        android:textAlignment="textStart"
+                                        android:layout_marginStart="5dp"/>
+                                <TextView
+                                    android:id="@+id/textViewBalance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#0C8703"
+                                    android:textSize="16sp"
+                                    android:text="Balance"
+                                    android:textAlignment="textStart"
+                                    android:layout_marginStart="5dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center">
+
+                                <ImageButton
+                                    android:id="@+id/buttonExport"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/baseline_save_alt_24"
+                                    android:backgroundTint="@color/purple_200"
+                                    android:tooltipText="Export"
+                                    />
+
+                            </LinearLayout>
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
