@@ -72,7 +72,7 @@ public class ExpensesFragment extends Fragment implements ExpensesAdapter.ItemCl
         progressBar.setIndeterminate(true);
         progressBar.setIndeterminateTintList(ColorStateList.valueOf(Color.WHITE));
 
-        CollectionReference collectionReference = firebaseFirestore.collection("Expenses");
+        CollectionReference collectionReference = firebaseFirestore.collection("Expenses Demo");
         collectionReference.orderBy("id", Query.Direction.DESCENDING).get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -219,7 +219,7 @@ public class ExpensesFragment extends Fragment implements ExpensesAdapter.ItemCl
                     user.put("date", StringDate);
                     user.put("details", StringDetails);
 
-                    DocumentReference documentReference = firebaseFirestore.collection("Expenses").document(idLongString);
+                    DocumentReference documentReference = firebaseFirestore.collection("Expenses Demo").document(idLongString);
                     documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void unused) {
@@ -290,7 +290,7 @@ public class ExpensesFragment extends Fragment implements ExpensesAdapter.ItemCl
                 progressBar.setIndeterminate(true);
                 progressBar.setIndeterminateTintList(ColorStateList.valueOf(Color.WHITE));
 
-                firebaseFirestore.collection("Expenses").document(idLongGetString)
+                firebaseFirestore.collection("Expenses Demo").document(idLongGetString)
                         .delete()
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
@@ -436,7 +436,7 @@ public class ExpensesFragment extends Fragment implements ExpensesAdapter.ItemCl
                 user.put("date", StringDate);
                 user.put("details", StringDetails);
 
-                DocumentReference documentReference = firebaseFirestore.collection("Expenses").document(idLongGetString);
+                DocumentReference documentReference = firebaseFirestore.collection("Expenses Demo").document(idLongGetString);
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
