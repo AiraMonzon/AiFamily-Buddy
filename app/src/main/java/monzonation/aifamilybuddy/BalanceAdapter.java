@@ -37,9 +37,9 @@ public class BalanceAdapter extends RecyclerView.Adapter<BalanceAdapter.ViewHold
         String income = "PHP "+balanceModel.getIncome();
         String expense = "PHP "+balanceModel.getExpense();
         holder.textViewYearMonth.setText(name);
-        holder.textViewIncome.setText(balance);
-        holder.textViewExpense.setText(income);
-        holder.textViewBalance.setText(expense);
+        holder.textViewIncome.setText(income);
+        holder.textViewExpense.setText(expense);
+        holder.textViewBalance.setText(balance);
     }
 
     @Override
