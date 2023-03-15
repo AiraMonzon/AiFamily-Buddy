@@ -42,7 +42,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
-                        android:textSize="40sp"
+                        android:textSize="35sp"
                         android:textStyle="bold"
                         android:textAlignment="center" />
 
@@ -63,7 +63,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#0C8703"
-                    android:textSize="50sp"
+                    android:textSize="32sp"
                     android:textStyle="bold"
                     android:text="0"
                     android:textAlignment="center" />
@@ -106,7 +106,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="#0F52C6"
-                        android:textSize="50sp"
+                        android:textSize="32sp"
                         android:textStyle="bold"
                         android:text="0"
                         android:textAlignment="center" />
@@ -145,7 +145,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColor="#D51313"
-                            android:textSize="50sp"
+                            android:textSize="32sp"
                             android:textStyle="bold"
                             android:text="0"
                             android:textAlignment="center"/>
@@ -240,7 +240,6 @@
                         android:layout_height="wrap_content"
                         android:textColor="#5E5E5E"
                         android:textSize="20sp"
-                        android:textStyle="italic"
                         android:text="Put a message here . . ."
                         android:textAlignment="center"
                         android:layout_margin="5dp"/>
